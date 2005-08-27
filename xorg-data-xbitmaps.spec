@@ -1,5 +1,3 @@
-# $Rev: 3338 $, $Date: 2005-08-15 12:17:57 $
-#
 Summary:	X bitmaps data
 Summary(pl):	Bitmapy dla X
 Name:		xorg-data-xbitmaps
@@ -12,9 +10,9 @@ Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/data/xbitmaps-%{version}.tar.bz
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-util-util-macros
-BuildRequires:	pkg-config
-BuildRoot:	%{tmpdir}/xbitmaps-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
@@ -24,10 +22,8 @@ X bitmaps data.
 %description -l pl
 Bitmapy dla X.
 
-
 %prep
 %setup -q -n xbitmaps-%{version}
-
 
 %build
 %{__aclocal}
@@ -38,7 +34,6 @@ Bitmapy dla X.
 
 %{__make}
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
@@ -46,10 +41,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	pkgconfigdir=%{_pkgconfigdir}
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(644,root,root,755)
