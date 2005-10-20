@@ -1,20 +1,20 @@
 Summary:	X bitmaps data
 Summary(pl):	Bitmapy dla X
 Name:		xorg-data-xbitmaps
-Version:	0.99.0
-Release:	0.02
+Version:	0.99.1
+Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/data/xbitmaps-%{version}.tar.bz2
-# Source0-md5:	a910bcd038f2c557e062cf66a3b67acf
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/data/xbitmaps-%{version}.tar.bz2
+# Source0-md5:	384ac767bba58062251f6f658b210071
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-util-util-macros
+# just for dir
+Requires:	xorg-proto-xproto
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_prefix		/usr/X11R6
 
 %description
 X bitmaps data.
@@ -46,5 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ChangeLog
 %{_includedir}/X11/bitmaps
 %{_pkgconfigdir}/xbitmaps.pc
