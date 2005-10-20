@@ -10,7 +10,6 @@ Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/data/xbitmaps-%{versio
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-util-util-macros
 # just for dir
 Requires:	xorg-proto-xproto
