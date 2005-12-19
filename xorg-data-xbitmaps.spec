@@ -1,12 +1,12 @@
 Summary:	X bitmaps data
 Summary(pl):	Bitmapy dla X
 Name:		xorg-data-xbitmaps
-Version:	0.99.1
+Version:	1.0.0
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/data/xbitmaps-%{version}.tar.bz2
-# Source0-md5:	384ac767bba58062251f6f658b210071
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/data/xbitmaps-%{version}.tar.bz2
+# Source0-md5:	fbe1dfefb35b3976bd9821ae7b8bfd10
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
