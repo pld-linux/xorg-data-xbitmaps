@@ -11,8 +11,6 @@ URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	xorg-util-util-macros
-# just for dir
-Requires:	xorg-proto-xproto-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -46,5 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog
+# don't drag whole xorg-proto-xproto-devel just for this dir
+%dir %{_includedir}/X11
 %{_includedir}/X11/bitmaps
 %{_pkgconfigdir}/xbitmaps.pc
