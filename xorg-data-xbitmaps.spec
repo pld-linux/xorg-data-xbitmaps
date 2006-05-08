@@ -6,7 +6,7 @@ Release:	0.1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/data/xbitmaps-%{version}.tar.bz2
-# Source0-md5:	22c6f4a17220cd6b41d9799905f8e357
+# Source0-md5:	b28a9840cde3c38d7c09716372fea257
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
