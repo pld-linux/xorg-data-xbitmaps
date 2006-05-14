@@ -20,7 +20,7 @@ X bitmaps data.
 Bitmapy dla X.
 
 %prep
-%setup -q -n xbitmaps-X11R7.0-%{version}
+%setup -q -n xbitmaps-%{version}
 
 %build
 %{__aclocal}
