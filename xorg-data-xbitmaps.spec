@@ -1,5 +1,5 @@
 Summary:	X bitmaps data
-Summary(pl):	Bitmapy dla X
+Summary(pl.UTF-8):   Bitmapy dla X
 Name:		xorg-data-xbitmaps
 Version:	1.0.1
 Release:	0.1
@@ -16,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 X bitmaps data.
 
-%description -l pl
+%description -l pl.UTF-8
 Bitmapy dla X.
 
 %prep
