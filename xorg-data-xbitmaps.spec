@@ -1,5 +1,5 @@
-Summary:	X bitmaps data
-Summary(pl.UTF-8):	Bitmapy dla X
+Summary:	Bitmaps that are shared between X applications
+Summary(pl.UTF-8):	Bitmapy współdzielone między aplikacjami X
 Name:		xorg-data-xbitmaps
 Version:	1.0.1
 Release:	1
@@ -14,10 +14,10 @@ BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-X bitmaps data.
+Bitmaps that are shared between X applications.
 
 %description -l pl.UTF-8
-Bitmapy dla X.
+Bitmapy współdzielone między aplikacjami X.
 
 %prep
 %setup -q -n xbitmaps-%{version}
