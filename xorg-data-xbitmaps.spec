@@ -2,7 +2,7 @@ Summary:	Bitmaps that are shared between X applications
 Summary(pl.UTF-8):	Bitmapy współdzielone między aplikacjami X
 Name:		xorg-data-xbitmaps
 Version:	1.1.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/data/xbitmaps-%{version}.tar.bz2
@@ -11,6 +11,7 @@ URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	xorg-util-util-macros >= 1.3
+Requires:	filesystem >= 3.0-32
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,7 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog
-# don't drag whole xorg-proto-xproto-devel just for this dir
-%dir %{_includedir}/X11
 %{_includedir}/X11/bitmaps
 %{_pkgconfigdir}/xbitmaps.pc
