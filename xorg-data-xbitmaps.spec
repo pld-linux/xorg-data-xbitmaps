@@ -2,7 +2,7 @@ Summary:	Bitmaps that are shared between X applications
 Summary(pl.UTF-8):	Bitmapy współdzielone między aplikacjami X
 Name:		xorg-data-xbitmaps
 Version:	1.1.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/data/xbitmaps-%{version}.tar.bz2
