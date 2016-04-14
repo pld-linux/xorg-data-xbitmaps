@@ -1,0 +1,14 @@
+drop arch specific 'libdir=@libdir@'
+
+see ba8d08a029c82aeb60b8c24fad76de8be288022b
+https://lists.debian.org/debian-x/2011/01/msg00289.html
+
+--- xbitmaps-1.1.1/xbitmaps.pc.in~	2009-10-17 00:37:58.000000000 +0300
++++ xbitmaps-1.1.1/xbitmaps.pc.in	2016-04-14 09:04:58.386919332 +0300
+@@ -1,6 +1,5 @@
+ prefix=@prefix@
+ exec_prefix=@exec_prefix@
+-libdir=@libdir@
+ includedir=@includedir@
+ 
+ Name: X bitmaps
